@@ -43,7 +43,7 @@ from composite_callback_handler import CompositeCallbackHandler
 
 agent = Agent(
     tools=[calculator, current_time, python_repl, letter_counter],
-    callback_handler=CompositeCallbackHandler("agent_interactions.log", "bquintas-opentelemetry2")
+    callback_handler=CompositeCallbackHandler("agent_interactions.log", "your-bucket-here")
 )
 
 # Ask the agent a question that uses the available tools
